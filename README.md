@@ -4,6 +4,9 @@ A browser-based planter generator built as a 3D web-development portfolio projec
 Change dimensions, taper, twist, fluting, wall thickness and drainage; the application
 rebuilds the actual mesh and exports the same geometry as binary STL or OBJ.
 
+**Live demo:** https://form-parametric-studio.vercel.app  
+**Source:** https://github.com/at2205/3_D_Sample
+
 ## Run
 
 Requires Node.js 22+ and npm.
@@ -16,10 +19,19 @@ npm run build
 npm run preview
 ```
 
-The local address is printed by Vite. Deploy the generated `dist` folder to a
-static host such as Netlify, Vercel or GitHub Pages. No backend or API keys are
-required. Publishing is a separate, owner-approved step; a local URL is not a
-public project link.
+The local address is printed by Vite. Production is deployed on Vercel; no
+backend or application API keys are required. The generated `dist` folder can
+also be hosted on other static hosts.
+
+To redeploy from this project after signing in to the official Vercel CLI:
+
+```powershell
+npx vercel@65.7.0 --prod --scope at2205s-projects
+```
+
+GitHub source is published, but automatic Git-triggered deployments are not yet
+connected: the Vercel GitHub integration still needs repository-access
+authorization. Until connected, use the CLI command above for deployments.
 
 ## What makes this more than a model viewer
 
@@ -61,7 +73,7 @@ a backend.
 
 ## Honest application description
 
-After you deploy and verify your own public URL, adapt the following:
+Adapt the following to responsibilities and knowledge you can personally demonstrate:
 
 > I built FORM, an interactive parametric planter studio using React, TypeScript
 > and Three.js. Users change dimensions, taper, twist, fluting, walls and drainage
@@ -69,7 +81,7 @@ After you deploy and verify your own public URL, adapt the following:
 > project includes mesh topology and export tests, material estimates and
 > shareable parameter links. I developed it with AI assistance and can explain
 > the procedural geometry, rendering lifecycle, validation and export pipeline.
-> Project: [insert your verified deployment URL].
+> Project: https://form-parametric-studio.vercel.app
 
 Only claim responsibilities and expertise you can demonstrate. This is a new
 portfolio project, not a production client deployment or prior employment.
